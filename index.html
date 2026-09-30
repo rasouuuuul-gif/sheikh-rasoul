@@ -16,8 +16,8 @@
     body {
       margin: 0;
       font-family: Tahoma, Arial, sans-serif;
-      background: linear-gradient(135deg, #f5f1e8, #e4dacb);
-      color: #29251f;
+      background: linear-gradient(135deg, #0f1713, #1d2b24);
+      color: #f2eadf;
     }
 
     .page {
@@ -31,38 +31,43 @@
     .card {
       width: 100%;
       max-width: 750px;
-      background: #fffdf9;
+      background: #18231e;
       border-radius: 28px;
       padding: 50px 25px;
       text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      border: 1px solid #ded3c2;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      border: 1px solid #3c4b42;
     }
 
+    /* عکس پروفایل */
     .logo {
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
       margin: 0 auto 25px;
       border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #b89b5e;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
       background: #2d4a3a;
-      color: #f5ead8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      font-weight: bold;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     h1 {
       margin: 0 0 18px;
-      color: #2d4a3a;
+      color: #d8bd78;
       font-size: clamp(30px, 7vw, 52px);
     }
 
     .welcome {
       font-size: 20px;
       line-height: 2;
-      color: #665f55;
+      color: #c8c0b4;
       margin-bottom: 35px;
     }
 
@@ -83,24 +88,61 @@
     }
 
     .button-main {
-      background: #2d4a3a;
+      background: #355846;
       color: white;
     }
 
     .button-main:hover {
       opacity: 0.85;
+      transform: translateY(-2px);
     }
 
     .button-light {
-      border: 1px solid #cfc2af;
-      color: #2d4a3a;
-      background: white;
+      border: 1px solid #6b735f;
+      color: #e8d7ae;
+      background: #202c26;
+    }
+
+    .button-light:hover {
+      background: #2b3931;
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      color: #d8bd78;
+    }
+
+    #about,
+    #contact {
+      border-top: 1px solid #34443b;
+      padding-top: 25px;
+    }
+
+    p {
+      color: #c8c0b4;
+    }
+
+    .telegram {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 13px 25px;
+      border-radius: 12px;
+      background: #355846;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .telegram:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
     }
 
     footer {
       margin-top: 40px;
       font-size: 13px;
-      color: #948a7c;
+      color: #8d948c;
     }
   </style>
 </head>
@@ -111,8 +153,9 @@
 
     <div class="card">
 
+      <!-- عکس پروفایل -->
       <div class="logo">
-        ر
+        <img src="profile.jpg" alt="شیخ رسول‌الدین قمی">
       </div>
 
       <h1>
@@ -136,37 +179,37 @@
       </div>
 
       <div id="about" style="margin-top:40px;">
-        <h2>درباره شیخ رسول‌الدین قمی</h2>
-        <p style="line-height:2;color:#665f55;">
+
+        <h2>
+          درباره شیخ رسول‌الدین قمی
+        </h2>
+
+        <p style="line-height:2;">
           اطلاعات و مطالب این بخش به‌زودی اضافه خواهد شد.
         </p>
+
       </div>
 
-   <div id="contact" style="margin-top:35px;">
-  <h2>ارتباط</h2>
+      <div id="contact" style="margin-top:35px;">
 
-  <p style="line-height:2;color:#665f55;">
-    برای ارتباط با ما از طریق تلگرام:
-  </p>
+        <h2>
+          ارتباط
+        </h2>
 
-  <a
-    href="https://t.me/girifin"
-    target="_blank"
-    rel="noopener"
-    style="
-      display:inline-block;
-      margin-top:10px;
-      padding:12px 24px;
-      border-radius:12px;
-      background:#2d4a3a;
-      color:white;
-      text-decoration:none;
-      font-weight:bold;
-    "
-  >
-    📱 تلگرام: @girifin
-  </a>
-</div>
+        <p style="line-height:2;">
+          برای ارتباط با ما از طریق تلگرام:
+        </p>
+
+        <a
+          class="telegram"
+          href="https://t.me/girifin"
+          target="_blank"
+          rel="noopener"
+        >
+          📱 تلگرام: @girifin
+        </a>
+
+      </div>
 
       <footer>
         © تمامی حقوق محفوظ است
